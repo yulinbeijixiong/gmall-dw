@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dw-publisher" />
+        <module name="dw-reltime" />
+        <module name="dw-list-servie" />
+        <module name="dw-common" />
+        <module name="dw-mocker" />
+        <module name="dw-logger" />
+        <module name="dw-canal" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="dw-list-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dw-common" options="" />
+      <module name="dw-list-servie" options="-parameters" />
+      <module name="dw-logger" options="" />
+      <module name="dw-mocker" options="" />
+      <module name="dw-publisher" options="-parameters" />
+    </option>
+  </component>
+</project>
